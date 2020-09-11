@@ -18,7 +18,7 @@ writing scripts for python and automation using python programing
 
 [History on UNIX](https://en.wikipedia.org/wiki/History_of_Unix)
 
-[Doenload Python](http://www.python.org/)
+[Download Python](http://www.python.org/)
 
 [Installation Guide](https://realpython.com/installing-python/)
 
