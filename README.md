@@ -31,3 +31,6 @@ writing scripts for python and automation using python programing
 [Mac](http://www.pyladies.com/blog/Get-Your-Mac-Ready-for-Python-Programming/)
 
 [Linux](https://www.digitalocean.com/community/tutorials/package-management-basics-apt-yum-dnf-pkg)
+
+### write, read files with python
+[Writing Files](https://docs.python.org/3/library/functions.html#open)
