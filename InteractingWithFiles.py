@@ -119,4 +119,74 @@ print(lines)
 #Writing Files in python
 with open("spider.txt", "w") as a file:
     file.write("I have overwritten all your data ") #return the number of characters in the double quotes
+    
+
+#MANAGING FILES AND DIRECTORIES
+# OS modules allows all it to run on all OS
+
+#delete a file
+import os 
+os.remove("novel.txt")
+os.remove("novel.txt") # Fails because the file is already removed
+
+#rename a file
+import os 
+os.rename("beforename.txt","current_name.txt")
+
+#check if files exits using so.path
+os.path.exits("current_name.txt") #returns true if the file exists
+
+
+#More Files information:
+#get size of a file in bytes
+os.path.getsize("spider.txt") #159
+#get last time modified
+os.path.getmtime("spider.txt") #prints time in unix timestamp
+#modify the time to more Huma readable
+import datetime
+timestamp = os.path.getmtime("spider.txt")
+datetime.datetime.fromtimestamp(timestamp) # (2020 1, 5, 8 , 2 ,896563)
+
+# Some more functions of the os.path module include getsize() and isfile() which get information on the file 
+# size and determine if a file exists, respectively. In the following code snippet, what do you think will print if the file does not exist?
+import os
+file= "file.dat"
+if os.path.isfile(file):
+    print(os.path.isfile(file))
+    print(os.path.getsize(file))
+else:
+	print(os.path.isfile(file))
+    print("File not found")  # File error as there is no such file
+    
+
+#Check for absolute path of a file
+os.path.abspath("spider.txt")
+'\home\user\spider.txt'
+
+#get current working directory
+print(os.getcwd())
+
+#create directory 
+mkdir  #works on both linux and windows OS
+os.mkdir("new_dirctory")
+#change directory
+os.chdir("new_dir)
+#remove directory
+os.rmdir("new_directory")
+
+#combining to check list and sub directories of a file:
+import os 
+os.listdir("website")
+['index.html,'images',''icons']
+
+dir = "website"
+for name in os.listdir(dir):
+    fullname = os.join(dir,name)
+    if os.path.usdir(fullname):
+        print("{} is a directory" .format(fullname))
+    else:
+        print("{} is a file".format(fullname))
+
+website/images is a directory
+website/index.html is a file
 
