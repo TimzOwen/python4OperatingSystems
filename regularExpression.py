@@ -94,3 +94,35 @@ grep ^ fruit /user/share/dict/wordchars
 grep cat$ /user/share/dict/word
       
 
+   
+#Simple matching
+result = re.search(r"aza","plaza")
+print(result)
+<re.Match object; span=(2, 5), match='aza'>
+
+#combine
+print(re.search(r"^X","Xenon"))
+<re.Match object; span=(0, 1), match='X'>
+
+#matching char
+print(re.search(r"p.ng","penguin"))
+<re.Match object; span=(0, 4), match='peng'>
+
+#check if text passed contains vowels
+import re
+def check_aei (text):
+  result = re.search(r"a.e.i", text) #or ([aei]).\1
+  return result != None
+
+print(check_aei("academia")) # True
+print(check_aei("aerial")) # False
+print(check_aei("paramedic")) # True
+
+#no Case sensitive
+print(re.search(r"p.ng","Pangae", re.IGNORECASE))
+<re.Match object; span=(0, 4), match='Pang'>
+
+
+
+#Wild cards and character classes 
+
