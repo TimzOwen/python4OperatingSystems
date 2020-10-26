@@ -163,4 +163,45 @@ print(re.search(r"cat|dog", "I like cats")) # returns True and match
 print(re.search(r"cat|dog", "I like cats")) # Returns true again
 print(re.search(r"cat|dog", "I like cats and dogs")) # returns first element alone
 print(re.findall(r"cat|dog", "I like cats")) # returns both the cat and the dog
+
+
+# Repetition qualifiers
+# allows us to find all the matching words
+import re
+
+print(re.search(r"Py.*n","Pymalion")) # Pymalion
+print(re.search(r"Py.*n","Python Programming")) # Python, Programin
+
+print(re.search(r"Py[a-z]*n","Python programming")) #python as the only complete ,and not being Greedy
+
+#egrep (+?)
+print(re.search(r"o+l+","goldfish")) #match "ol"
+print(re.search(r"o+l+","woolly")) # match = "ooll"
+print(re.search(r"o+l+","oil")) # match = None because i comes in between them
+
+
+# The repeating_letter_a function checks if the text passed includes the letter "a"
+#  (lowercase or uppercase) at least twice. For example, repeating_letter_a("banana") is True,
+#  while repeating_letter_a("pineapple") is False. Fill in the code to make this work.
+import re
+def repeating_letter_a(text):
+  result = re.search(r"a+.*a+",text,re.IGNORECASE)
+  return result != None
+
+print(repeating_letter_a("banana")) # True
+print(repeating_letter_a("pineapple")) # False
+print(repeating_letter_a("Animal Kingdom")) # True
+print(repeating_letter_a("A is for apple")) # True
+
+#soln 2
+import re
+def repeating_letter_a(text):
+  result = re.search(r"A|a]+.*[A|a]+",text,re.IGNORECASE)
+  return result != None
+
+print(repeating_letter_a("banana")) # True
+print(repeating_letter_a("pineapple")) # False
+print(repeating_letter_a("Animal Kingdom")) # True
+print(repeating_letter_a("A is for apple")) # True
+
  
