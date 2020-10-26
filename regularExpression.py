@@ -205,3 +205,36 @@ print(repeating_letter_a("Animal Kingdom")) # True
 print(repeating_letter_a("A is for apple")) # True
 
  
+
+
+import requests.api
+import re
+# ? = 0/1 occurence of a char
+print(re.search(r"p?each","To each their own")) # each
+print(re.search(r"p?each","I like Peaches")) #peach
+
+#escaping characters
+print(re.search(r".com", "welcome")) # lcom , not true
+print(re.search(r"\.com", "welcome")) # none , true
+print(re.search(r"\.com","owen@google.com")) #.com
+
+# \w = matches any alphanumeric charater, numbers ,values ,underscore
+print(re.search(r,"\w*","This is a new example")) # 0-4
+print(re.search(r"\w*","This_is_a_new_example")) # 0-19
+
+#\d-digits, \s-white spaces,tabs,newline    \b - word boundaries
+
+
+
+#Code to check if the text passed has at least 2 groups of alphanumeric characters
+#(including letters, numbers, and underscores) separated by one or more whitespace characters.
+
+import re
+def check_character_groups(text):
+  result = re.search(r"\w\s\w*", text)
+  return result != None
+
+print(check_character_groups("One")) # False
+print(check_character_groups("123  Ready Set GO")) # True
+print(check_character_groups("username user_01")) # True
+print(check_character_groups("shopping_list: milk, bread, eggs.")) # False
