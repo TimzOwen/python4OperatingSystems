@@ -125,4 +125,42 @@ print(re.search(r"p.ng","Pangae", re.IGNORECASE))
 
 
 #Wild cards and character classes 
+#Wild cards and character classes
+#wildcards can match more than one char
+#char classes in square brackets allows users to search for specific char in string
 
+import re 
+
+print(re.search(r,"[Pp]ython",Python))
+
+# match all lower case letter
+print(re.search(r"[a-z]way","The end of the highway"))
+print(re,search("cloud[a-zA-Z0-9", "cloudy"))
+
+
+
+#  check if the text passed contains punctuation    
+# symbols: commas, periods, colons, semicolons, question marks, and exclamation points.
+
+
+import re
+def check_punctuation (text):
+  result = re.search(r".:;?!", text)
+  return result != None
+
+print(check_punctuation("This is a sentence that ends with a period.")) # True
+print(check_punctuation("This is a sentence fragment without a period")) # False
+print(check_punctuation("Aren't regular expressions awesome?")) # True
+print(check_punctuation("Wow! We're really picking up some steam now!")) # True
+print(check_punctuation("End of the line")) # False
+
+#search for any char not a letter
+print(re.search(r,"[^a-zA-Z]","This is a super highway")) # detects spaces
+print(re.search(r,"[^a-zA-Z ]","This is a super highway")) # detects fullstop because we added the space after Z
+
+#pipe to macth certain words
+print(re.search(r"cat|dog", "I like cats")) # returns True and match
+print(re.search(r"cat|dog", "I like cats")) # Returns true again
+print(re.search(r"cat|dog", "I like cats and dogs")) # returns first element alone
+print(re.findall(r"cat|dog", "I like cats")) # returns both the cat and the dog
+ 
