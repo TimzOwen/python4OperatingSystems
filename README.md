@@ -37,13 +37,13 @@ writing scripts for python and automation using python programing
 
 
 ### Learning all about Regular Expression
-.[Learn from regx1.0.com](www.regx101.com)
+[Learn from regx1.0.com](www.regx101.com)
 
-.[How to Regx](https://docs.python.org/3/howto/regex.html)
+[How to Regx](https://docs.python.org/3/howto/regex.html)
 
-.[The Regx Library](https://docs.python.org/3/library/re.htmll)
+[The Regx Library](https://docs.python.org/3/library/re.htmll)
 
-.[the Greedy vs non-Greedy Regx](https://docs.python.org/3/howto/regex.html#greedy-versus-non-greedy)
+[the Greedy vs non-Greedy Regx](https://docs.python.org/3/howto/regex.html#greedy-versus-non-greedy)
 
 
 
