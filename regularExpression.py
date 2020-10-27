@@ -238,3 +238,39 @@ print(check_character_groups("One")) # False
 print(check_character_groups("123  Ready Set GO")) # True
 print(check_character_groups("username user_01")) # True
 print(check_character_groups("shopping_list: milk, bread, eggs.")) # False
+
+
+
+
+import re
+
+# Regular expression in action with real simulation scenarios
+
+#words that start and end with a (A.*a)
+
+#Countries starting and ending with A
+print(re.search(r"A.*a","Argentina")) # True, Argentina
+print(re.search(r"A.*a","Azurenan")) # no complete "Azurea" cutting of the string
+print(re.search(r"^A.*a$","Azureanan")) # incomplete now , "Azureanan"  = None
+print(re.search(r"^A.*a$","Australia")) #complete
+
+# check for valid variable names
+pattern  = r"^[a-zA-Z_][a-zA-Z0-9_]*$"
+print(re.search(pattern,"This_si_a_valid_user_name")) # true
+
+
+# Fill in the code to check if the text passed looks like a standard sentence,
+# meaning that it starts with an uppercase letter,
+# followed by at least some lowercase letters or a space, and ends with a period,
+# question mark, or exclamation point.
+
+import re
+def check_sentence(text):
+  result = re.search(r"^[A-Z][ |a-z]*[.!\?]$", text)
+  return result != None
+
+print(check_sentence("Is this is a sentence?")) # True
+print(check_sentence("is this is a sentence?")) # False
+print(check_sentence("Hello")) # False
+print(check_sentence("1-2-3-GO!")) # False
+print(check_sentence("A star is born.")) # True
