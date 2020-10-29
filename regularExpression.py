@@ -389,3 +389,58 @@ print(check_time("12:45pm")) # True
 print(check_time("9:59 AM")) # True
 print(check_time("6:60am")) # False
 print(check_time("five o'clock")) # False
+
+
+
+# Advanced Regular Expression
+# ADVANCED REGULAR EXPRESSION 
+
+# capturing Groups
+# Portions of patterns enclosed in parenthesis
+import re
+#create a script for matching first and last name
+result = re.search(r"^(\w*),(\w*)$","Timz,Owen")
+print(result)
+print(result.groups()) #prints groups
+print(result[0]) # access first group element
+print(result[1])
+print(result[2])
+#rearrange
+print("{} {}".format(result[2], result[1])) #rearrange using a different format
+
+
+# Use functions to validate user names
+
+def validate_user_names(name):
+      results = re.search(r"^(\w*),(\w*)$", name)
+      if results is None:
+            return name
+      return "{} {}".format(results[2], results[1])
+print(validate_user_names("Timz,Owen")) # Owen Timz
+print(validate_user_names("Timz, Owen, Mr.")) # Timz, Owen, Mr
+print(validate_user_names("Mr,Owen")) # Owen Mr
+
+# Fix the regular expression used in the rearrange_name function so that it
+# can match middle names, middle initials, as well as double surnames.
+import re
+def rearrange_name(name):
+  result = re.search(r"^(\w*), (\w*)$", name)
+  if result == None:
+    return name
+  return "{} {}".format(result[2], result[1])
+
+name=rearrange_name("Kennedy, John F.")
+print(name)
+
+# soln
+import re
+def rearrange_name(name):
+  result = re.search(r"^([\w \.-]*), ([\w \.-]*)$", name)
+  if result == None:
+    return name
+  return "{} {}".format(result[2], result[1])
+
+name=rearrange_name("Kennedy, John F.")
+print(name)
+
+
