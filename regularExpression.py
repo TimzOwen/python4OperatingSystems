@@ -471,6 +471,58 @@ print(long_words("I like to drink coffee in the morning.")) # ['morning']
 print(long_words("I also have a taste for hot chocolate in the afternoon.")) # ['chocolate', 'afternoon']
 print(long_words("I never drink tea late at night.")) # []
 
+# Extracting PID using Regex
+import re
 
+log = "July 31 07:51:30 mycomputer bad process[123456]: ERROR performing package upgrade"
+regex = r"\[(\d+)\]"
+results = re.search((regex, log))
+print(results[1]) # prints [123456]
+
+print(re.search(regex, "now the process has changed with [321654] here")) # prints 321654
+
+print(re.search(regex, "lets try this [now]")) # throws an error
+
+# solution is to use PID
+# lets create a function here
+
+def extract_pid(log_line):
+    regex = r"\[(\d+)\]"
+    results = regex.search(regex,log_line)
+    if results is None:
+        return ""
+    return results[1]
+print(extract_pid(log))
+
+
+# Add to the regular expression used in the extract_pid function,
+# to return the uppercase message in parenthesis, after the process id.
+import re
+def extract_pid(log_line):
+    regex = r"\[(\d+)\]___"
+    result = re.search(regex, log_line)
+    if result is None:
+        return None
+    return "{} ({})".format(___)
+
+print(extract_pid("July 31 07:51:48 mycomputer bad_process[12345]: ERROR Performing package upgrade")) # 12345 (ERROR)
+print(extract_pid("99 elephants in a [cage]")) # None
+print(extract_pid("A string that also has numbers [34567] but no uppercase message")) # None
+print(extract_pid("July 31 08:08:08 mycomputer new_process[67890]: RUNNING Performing backup")) # 67890 (RUNNING)
+
+
+#soln 
+import re
+def extract_pid(log_line):
+    regex = r"\[(\d+)\]\: ([A-Z]{5,})"
+    result = re.search(regex, log_line)
+    if result is None:
+        return None
+    return "{} ({})".format(result[1],result[2])
+
+print(extract_pid("July 31 07:51:48 mycomputer bad_process[12345]: ERROR Performing package upgrade")) # 12345 (ERROR)
+print(extract_pid("99 elephants in a [cage]")) # None
+print(extract_pid("A string that also has numbers [34567] but no uppercase message")) # None
+print(extract_pid("July 31 08:08:08 mycomputer new_process[67890]: RUNNING Performing backup")) # 67890 (RUNNING)
 
 
