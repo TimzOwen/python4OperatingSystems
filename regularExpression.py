@@ -443,4 +443,34 @@ def rearrange_name(name):
 name=rearrange_name("Kennedy, John F.")
 print(name)
 
+# Repetition qualifiers
+
+import re
+
+# Match 5 String char letter
+print(re.search(r"[a-zA-Z]{5}", "Timz Owens Cheba High schoo")) # use find all to find all matches
+print(re.findall(r"[a-zA-Z]{5}","Timz Owens Cheba High schoo"))
+print(re.findall(r"\b[a-zA-Z]{5}\b","Timz Owens Cheba High school")) # complete sentences
+
+# match between ranges
+print(re.findall(r"\w{5,10}","Timz Owens Chebara High school and a proffessional Developer"))
+
+# find with specificc range
+print(re.search(r"s\w{,20}","mr proffessor the developer is a prfessionanlly good"))
+
+
+# The long_words function returns all words that are at least 7 characters.
+#  Fill in the regular expression to complete this function.
+import re
+def long_words(text):
+  pattern = re.findall(r"\w*"{7,})
+  result = re.findall(pattern, text)
+  return result
+
+print(long_words("I like to drink coffee in the morning.")) # ['morning']
+print(long_words("I also have a taste for hot chocolate in the afternoon.")) # ['chocolate', 'afternoon']
+print(long_words("I never drink tea late at night.")) # []
+
+
+
 
