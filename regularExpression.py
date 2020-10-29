@@ -526,3 +526,17 @@ print(extract_pid("A string that also has numbers [34567] but no uppercase messa
 print(extract_pid("July 31 08:08:08 mycomputer new_process[67890]: RUNNING Performing backup")) # 67890 (RUNNING)
 
 
+# spliting and Replacing
+import re
+
+print(re.split(r"[.?!]","statement 1 here, and this one too! and wouw?")) # no symbols printed
+
+print(re.split(r"([.?!])", "statement 1 here, and this one too! and wouw?")) # both statements and symbols
+
+# sub
+# email scenario
+print(re.sub(r"[\w.%+-]+@[w.-]+", "[REDACTED]", "Receined email from my_net.2300@my_ex.com"))
+
+#Replacing with sub
+print(re.sub(r"^([\w.-]*), ([\w.-]*$)",r"\2\1","Timz, Owen")) # Owen Timz
+
