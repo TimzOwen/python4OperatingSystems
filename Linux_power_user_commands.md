@@ -179,4 +179,163 @@ moving doc
 remove
 
     rm command
+   
+   
+
+#### Removing Files and directories Linux OS
+
+remove
+    rm text1.txt
+    
+force remove
+
+    rm -r linuxFolder
+
+#### Files and Text manipulation
+
+#### on windows
+
+Open a file
+
+    cat owen.txt
+
+    more owen.txt        (q-quit back to terminal, Enter-scroll line by line ,spacebar-page by page scrolling)
+
+
+View just first few lines of a file
+
+    cat owen.txt -Head 10       (first 10 lines only)
+    
+View last line
+
+    cat owen.txt -Tail 10
+
+#### Linux display contents of a file
+
+View
+
+    cat important.txt
+    
+large doc
+
+    less large.txt            (up&Down,pageup&down,g-moves to start file,G-end text file, /word_search, q-quit shell)
+    
+view first and last few lines of a file
+
+    head owen.txt
+    
+    tail owen.txt
+
+
+#### modifying Text files
+
+start notepad++
+
+    start notepad++ new_file_to_be_created.txt
+
+#### modifying Text Files in Linux
+
+start nano editor
+
+    nano new_owen_file
+
+#### POWERSHELL powerful commands
+
+actual shell command
+
+    Get-Alias ls
+    
+children
+
+    Get-childItem C:\
+
+#### Searching within files in Windows
+
+search with select string
+
+    select-string kabarak owen.txt
+    
+use wildcat from regular expression
+
+    select-string kabarak *.txt
+
+#### windows, searching within directories
+
+Filter command
+
+    ls 'C:\Program Files\' -Recurse -Filter *.exe
+
+#### Linux searching within files
+
+uses grep
+
+    grep cow farm_animal.txt
+    
+multiple files search
+
+    grep cow *.animal.txt
+
+
+#### Windows input,output and pipeline
+
+echo-writes output
+
+    creates a new file
+    
+    echo woof > dogs.txt
+    
+Io
+
+    stdin
+    
+    stdout
+    
+    stderr
+    
+> ---stdn output redirector
+
+>> ---adds instead of overwiting a file
+
+|----pipelines to pass output of a string into input of another
+
+    cat owen.txt | select-string kaba
+    
+place it in a new file
+
+    cat owen.txt | select-string kaba > new_words.txt
+
+stderr:
+
+    forwards error output to  file
+    
+    rm secure _file         ("permision denied erro")
+    
+    re secure_file 2> errors.txt
+    
+    re secure_file 2> $null
+
+$null
+
+    std char with definition of nothing
+
+
+#### output redirection linux
+
+create
+
+    echo woof > dogs.txt - overwrite
+    
+    echo woof >> dogs.txt - no overwrite
+    
+input
+
+    cat < file_input.txt
+    
+redirect stderr
+
+    ls /dir/fake_data 2> output_error.txt
+    
+search
+
+    ls -la /etc/ | grep bluetooth    # prints files with bluetooth
     
