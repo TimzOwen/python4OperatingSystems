@@ -425,4 +425,136 @@ remove
     sudo userdel owen
 
 
-#### Files Permission
+
+#### Files Permission Windows
+
+File permission
+
+    (Access Control List)
+    
+Check permission
+
+    icacls ~\Desktop
+    
+    icacls /?
+
+
+#### Permission in Linux
+
+check
+
+    ls -l ~/my-file
+
+#### Modifying permission Windows
+
+give permision to all
+
+    icacls 'C:\Vacation Pictures\' /grant 'Everyone:(OI)(CI)(R)'
+    
+other users to view only
+
+    icacls 'C:\Vacation Pictures\' /grant 'Everyone:(OI)(CI)(R)'
+    
+only users with passwords
+
+    icacls 'C:\Vacation Pictures\' /grant 'Authenticated Users:(OI)(CI)(R)'
+    
+Remove Everyone from viewing
+
+    icacls 'C:\Vacation Pictures\' /remove Everyone
+
+#### modifying permission in Linux
+
+Owner---->'u'
+
+group---->'g'
+
+other users-->'o'
+
+permission:
+
+    ls -l my_cool_file
+    
+    chmod u+x my_cool_file
+    
+remove permission
+
+    chmod u-x my_cool_file
+    
+multiple permission:
+
+    chmod u+rx my_cool_file
+    
+    chmode ugo +r my_cool_file
+    
+using numerics
+
+    4-->r
+    
+    2-->w
+    
+    1-->x
+    
+chmod 754 my_cool_file (7-owner, 5-group, 4-all users)
+
+change owner of a file
+
+    sudo chown timzowen  my_cool_file
+    
+    sudo chgrp teamWhite my_cool_file
+
+#### Windows special permission
+
+check permission
+
+    icacls C:\Windows\Temp
+
+    WD-->Create Files/Write Data
+    
+    AD-->Create Folders/Append Data
+    
+    S-->Synchronize
+
+    Creator owner--> shows the user of a specific folder
+
+sample:
+
+    create a folder in Desktop
+    
+        mkdir ~\Desktop\example
+        
+    write output
+    
+        icacls ~\Desktop\Example >> icacls.txt
+        
+        cat icacls.txt
+
+#### Linux set UID, GID $ Sticky bit
+
+change password:
+
+    passwd
+    
+run as root:
+
+    ls -l /usr/bin/password
+    
+sID
+
+    sudo chmod u+s my_cool_file ('#will require passwd to allow)
+    
+run groupID
+
+    sudo chmod 4755 my_cool_file
+    
+GID
+    sudo chmod g+s my_cool_file #or
+    
+    sudo chmod 2755 my_cool_file
+    
+Sticky: (w but not Del)
+
+    sudo chmod +t my_cool_folder
+    
+    sudo chmod 1755 my_cool_folder
+
