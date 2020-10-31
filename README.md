@@ -46,6 +46,20 @@ writing scripts for python and automation using python programing
 [the Greedy vs non-Greedy Regx](https://docs.python.org/3/howto/regex.html#greedy-versus-non-greedy)
 
 
+### Windows CLI and UNIX Bash suplimentary reading
+[powershell](https://docs.microsoft.com/powershell/)
+
+[Windows server](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
+
+[Manual bash](https://www.gnu.org/software/bash/manual/bash.html)
+
+### Size and Disk
+
+[Technet](https://technet.microsoft.com/en-us/library/hh148159.aspx)
+
+### Vim Text Editor Reading
+[Vim Text Editor](https://notepad-plus-plus.org/)
+
 
 
 
