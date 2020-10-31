@@ -36,3 +36,55 @@ Echo
     echo $Path 
 export missing Keys
     export FRUIT=pineapple
+
+    
+    
+    
+# CommandLine Arguments
+
+# Exit status-->Commands provided to the shell 
+check variable value(pass-0)
+    wc variables.py
+    echo $?
+Errors(1)
+
+# Atom create
+
+import os
+import sys
+
+filename=sys.argv[1]
+
+if not os.path.exists(filename):
+    with open(filename,"w") as f:
+        f.write("New file created\n")
+else:
+    print("Error, File {} exists".format(filename))
+    sys.exit(1)
+    
+
+
+# summary 
+# Taking an input from a user, raw_input should be used:
+>>> my_number = raw_input('Please Enter a Number: \n')
+Please Enter a Number: 
+1337
+>>> print(my_number)
+1337
+>>>
+
+# Now, this is important, because, raw_input does not evaluate an otherwise valid Python expression. In simple terms, 
+# raw_input will just get a string from a user, where input will actually perform basic maths and the like. See below:
+>>> my_raw_input = raw_input('Please Enter a Number: \n')
+Please Enter a Number: 
+123 + 1  # This is treated like a raw string.
+>>> my_input = input('Please Enter a Number: \n')
+Please Enter a Number: 
+123 + 1 # This is treated like an expression.
+>>> print(my_raw_input)
+123 + 1
+>>> print(my_input)
+124 # See that the expression was evaluated!
+
+
+# sample 3
