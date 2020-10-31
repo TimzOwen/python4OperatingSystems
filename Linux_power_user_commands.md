@@ -339,3 +339,90 @@ search
 
     ls -la /etc/ | grep bluetooth    # prints files with bluetooth
     
+### USERS AND GROUPS
+
+####
+Network domain---> a network of computers, users, files,etc...added to a central database
+
+UAC (User access control)----->prevents unauthorized changes to a system
+
+#### check user account windows
+
+check
+
+    Get-LocalUser
+    
+Groups
+
+    Get-LocalGroup
+    
+check admins
+
+    Get-LocalGroupMember Administrators
+
+#### linux file permission
+
+permission
+
+    sudo cat/home/doc.txt
+    
+check users
+
+    cat /etc/password
+
+#### Passwords Windows
+
+GUI
+
+    Computer management
+    
+CLI
+
+    net user Owe *
+    
+NextLogin
+
+    net user Owe /logonpasswordchng:yes
+
+
+# Linux password
+
+change
+
+    passwd Owe
+    
+next login
+
+    sudo passwd -e Owe
+
+
+#### Adding and Removing Users in Windows
+
+GUI
+
+    computer management
+    
+CLI
+
+    net user Chelsea * /add
+    
+    net user Cherono password /add /logonpasswordchng:yes
+    
+remove
+
+    net user Chelsea /del
+    
+    Remove-LocalUser Cherono
+
+#### Adding and removing files in Linux
+
+add
+
+    sudo useradd owen
+    
+remove
+
+    sudo userdel owen
+
+
+#### Files Permission
