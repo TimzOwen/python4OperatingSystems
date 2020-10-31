@@ -60,7 +60,32 @@ writing scripts for python and automation using python programing
 ### Vim Text Editor Reading
 [Vim Text Editor](https://notepad-plus-plus.org/)
 
+### Text Editors
 
+[Nano Editor](https://www.nano-editor.org/)
+
+[Source Net](https://vim.sourceforge.io/docs.php)
+
+[GNU](https://www.gnu.org/software/emacs/tour/)
+
+
+### Powershell super user
+
+[powershell](https://mva.microsoft.com/en-us/training-courses/getting-started-with-microsoft-powershell-8276)
+
+[Github repo](https://github.com/PowerShell/PowerShell/blob/master/docs/learning-powershell/README.md)
+
+### Windows and Passwords
+
+[Passwords in Windows](https://msdn.microsoft.com/en-us/library/cc875839.aspx)
+
+### Mobile and USer Accounts
+
+[Apple OS](https://support.apple.com/HT201320)
+
+[Android OS](https://support.google.com/nexus/answer/7664951)
+
+[Android Google](https://support.google.com/nexus/answer/2865483)
 
 
 
