@@ -89,3 +89,60 @@ writing scripts for python and automation using python programing
 
 
 
+### Windows ACL
+
+https://msdn.microsoft.com/en-us/library/windows/desktop/aa374872(v=vs.85).aspx
+
+### Special permission in Windows
+
+https://technet.microsoft.com/en-us/library/cc732880(v=ws.11).aspx
+
+### Windows software packages
+
+https://en.wikipedia.org/wiki/Portable_Executable
+
+https://msdn.microsoft.com/en-us/library/windows/desktop/aa369294(v=vs.85).aspx
+
+https://en.wikipedia.org/wiki/Windows_Store
+
+https://msdn.microsoft.com/en-us/library/windows/desktop/hh446767(v=vs.85).aspx
+
+### mobile app packages
+
+https://developer.apple.com/business/custom-apps/
+
+https://developers.google.com/android/work/play/custom-app-api/get-started
+
+https://support.apple.com/HT201656
+
+https://support.google.com/android/answer/7431795
+
+https://support.apple.com/HT204266
+
+https://support.google.com/googleplay/answer/113412
+
+### Reading for Linux TAR
+
+http://www.linfo.org/tar.html
+
+
+### 7-zip and powershell
+
+http://www.7-zip.org/download.html
+
+https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.archive/compress-archive?view=powershell-5.0
+
+### Windows Package Dependencies
+
+https://en.wikipedia.org/wiki/Dynamic-link_library
+
+https://en.wikipedia.org/wiki/DLL_Hell
+
+https://msdn.microsoft.com/en-us/library/aa376307.aspx
+
+http://www.powershellgallery.com/
+
+### Linux package managers
+
+https://help.ubuntu.com/lts/serverguide/dpkg.html
+
