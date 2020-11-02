@@ -104,3 +104,90 @@ Configuration management tools
     SCCM
     
     Puppet
+    
+    
+#### Package Managers Linux
+
+apt(Advanced package Tool)
+
+    sudo apt install gimp
+    
+remove
+
+    sudo apt remove gimp
+    
+PPA (Personal Pckg Archive)
+
+    s/w repo for uploading src packges fro apt
+    
+    /etc/apt/sources.list
+    
+updated
+
+    sudo apt update
+    
+upgrade
+
+    sudo apt upgrade
+
+
+#### Behind the scenes of package manages Windows
+
+check process
+
+    process Monitoring
+    
+try Orca.exe
+
+
+#### Behind the scene Linux
+
+setup script
+
+    ls -l example\app/
+
+### DEVICE SOFTWARE MANAGEMENT
+
+#### Devices and drivers
+
+windows
+
+    Device Manager
+    
+Ubuntu
+
+    character devices
+    
+        transmit data in characters (keyboard and mouse etc)
+        
+    Block Devices
+    
+        USB, Hardrives CDROM transfer data in blocks
+        
+    kernel module for update drivers
+
+####  Windows Operating system Update
+
+security patch
+
+    s/w ment to fix security hole
+    
+    update settings/advances
+
+#### Linux OS Update
+
+uname
+
+     gives us system info
+     
+-r (check kernel version)
+
+    shows the version you have
+    
+    uname -r
+    
+update first then full upgrade
+
+    sudo apt update
+    
+    sudo apt full upgrade
