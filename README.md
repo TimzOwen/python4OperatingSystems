@@ -146,3 +146,54 @@ writing scripts for python and automation using python programing
 
 [Ubuntu Package managers](https://help.ubuntu.com/lts/serverguide/dpkg.html)
 
+
+
+### Windows Package Managers
+
+[Package Manager](https://en.wikipedia.org/wiki/NuGet)
+
+[Chocolatey](https://chocolatey.org/packages)
+
+### Linux PPA
+
+[supplementary reading on PPA](https://help.launchpad.net/Packaging/PPA)
+
+[Supplementary reading on GIMP](https://help.launchpad.net/Packaging/PPA)
+
+### Process monitors and Windows installers
+
+[Process Monitors](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon)
+
+[Windows installers](https://msdn.microsoft.com/en-us/library/windows/desktop/aa372837(v=vs.85).aspx)
+
+[Orca application](https://msdn.microsoft.com/en-us/library/windows/desktop/aa370557(v=vs.85).aspx)
+
+### Windows Drivers
+
+[Plug and Play](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/introduction-to-plug-and-play)
+
+[Hardware Identification](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/step-1--the-new-device-is-identified)
+
+[Drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/step-2--a-driver-for-the-device-is-selected)
+
+### Linux drivers and Devices
+
+[Device Files](https://en.wikipedia.org/wiki/Device_file)
+
+[Udev](https://en.wikipedia.org/wiki/Udev)
+
+### Os Update Windows
+
+[Windows Update](https://en.wikipedia.org/wiki/Windows_Update)
+
+[Behind the scene of windows update](http://configmgr2012.blogspot.com/2010/06/windows-update-explained.html#_Toc210097879)
+
+[Windows 7 & 8](https://blogs.technet.microsoft.com/windowsitpro/2016/08/15/further-simplifying-servicing-model-for-windows-7-and-windows-8-1/)
+
+### Os Updates Linux
+
+[Linux Kernel Reading](https://en.wikipedia.org/wiki/Linux_kernel)
+
+[behind the scene os Linux update](https://www.linux.com/learn/linux-101-updating-your-system)
+
+[Update ubuntu on terminal](https://www.cyberciti.biz/faq/how-do-i-update-ubuntu-linux-softwares/)
