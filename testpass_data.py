@@ -1,5 +1,8 @@
 # linux and windows test for py
 
+# use latest python 
+#use CML on windows and Terminal on linux
+
 # print logs and len in google web site
 import requests
 
