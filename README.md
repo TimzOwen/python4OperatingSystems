@@ -197,3 +197,15 @@ writing scripts for python and automation using python programing
 [behind the scene os Linux update](https://www.linux.com/learn/linux-101-updating-your-system)
 
 [Update ubuntu on terminal](https://www.cyberciti.biz/faq/how-do-i-update-ubuntu-linux-softwares/)
+
+
+### User Inputs in python
+ [](https://docs.python.org/2/library/functions.html#input)
+ 
+ [](https://docs.python.org/2/library/functions.html#raw_input)
+ 
+ [](https://docs.python.org/2/library/functions.html#eval)
+ 
+ [](https://docs.python.org/3/library/functions.html#input)
+ 
+ [](https://docs.python.org/3/library/functions.html#input)
