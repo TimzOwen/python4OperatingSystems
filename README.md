@@ -201,12 +201,12 @@ writing scripts for python and automation using python programing
 
 ### User Inputs in python
 
-[](https://docs.python.org/2/library/functions.html#input)
+[Html user Functions](https://docs.python.org/2/library/functions.html#input)
 
-[](https://docs.python.org/2/library/functions.html#raw_input)
+[Raw Input ](https://docs.python.org/2/library/functions.html#raw_input)
  
-[](https://docs.python.org/2/library/functions.html#eval)
+[Eval](https://docs.python.org/2/library/functions.html#eval)
  
-[](https://docs.python.org/3/library/functions.html#input)
+[Functional inputs](https://docs.python.org/3/library/functions.html#input)
  
-[](https://docs.python.org/3/library/functions.html#input)
+[Inouts II](https://docs.python.org/3/library/functions.html#input)
