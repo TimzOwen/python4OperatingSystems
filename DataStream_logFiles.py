@@ -87,4 +87,26 @@ Please Enter a Number: 
 124 # See that the expression was evaluated!
 
 
-# sample 3
+
+# python Subprocesses
+import subprocess
+
+>>>subprocess.run(["date"])
+>>>(subprocess.run(["sleep",'2']))
+
+#obtaining the output os a system Command
+# check users logged ina comp wit WHO
+
+results  = subprocess.run(["Host","8.8.8.8"], capture_output=true)
+print(results.returncode)
+print(results.stdout())
+print(results.stdout.dencode.split())
+# run a file not existing using the command and check the stdout error
+results = subprocess.run(["rm","Does not exist"], capture_error=true) # 1 = fail
+print(results.stdout)
+print(results.stderr)
+
+#
+
+
+
