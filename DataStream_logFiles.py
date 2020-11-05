@@ -302,8 +302,22 @@ for x in myGenerator:
 
 
 
-# PROCESS
+# using generators instead of List to save on space
+def appendingN(num):
+    my_list = []
+    start_n = 0
+    while start_n<num:
+        my_list.append(num)
+        num +=1
+    return my_list
 
+def appendingWithGenerators(n):
+    num = 0
+    while num < n:
+        yield num
+        num += 1
+print(sum(appendingWithGenerators(5)))
+print(sum(appendingN(5)))
 
 
 
