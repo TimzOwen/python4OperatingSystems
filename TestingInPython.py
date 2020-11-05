@@ -198,4 +198,92 @@ unittest.main()
 
 
 
+# More Examples and soln on tets
+
+# Remove an item form an input list
+my_list = [27, 5, 9, 6, 8]
+
+def RemoveValue(myVal):
+    my_list.remove(myVal)
+    return my_list
+
+print(RemoveValue(27)) # gives [5, 9, 6, 8]
+# now trying to run it again , we receive a value not found error
+print(RemoveValue(27)) # Error
+
+# now write code to handle this error
+def RemoveValue(myVal):
+    if myVal not in my_list:
+        raise ValueError("Value must be in the given list")
+    else:
+        my_list.remove(myVal)
+    return my_list
+
+print(RemoveValue(27)) # print("Value Error in the message")
+
+
+
+# EX 2
+# sorting input Data alphabetically
+
+my_word_list = ['east', 'after', 'up', 'over', 'inside']
+
+def OrganizeList(myList):
+    myList.sort()
+    return myList
+
+print(OrganizeList(my_word_list))
+# Now, on sorting numbers we get an erros, chekc out
+my_new_list = [6, 3, 8, "12", 42]
+print(OrganizeList(my_new_list))
+# so fix the code and run it again, (check the code below solved using assertion)
+def OrganizeList(myList):
+    for item in myList:
+        assert type(myList) == str, "Word list must be a list of strings"
+    myList.sort()
+    return myList
+
+print(OrganizeList(my_new_list))
+
+
+
+# Example 3
+
+# The Guess() function below takes a list of participants, assigns each a random number
+# from 1 to 9, and stores this information in a dictionary with the participant name as the key. It then returns
+# True if Larry was assigned the number 9 and False if this was not the case.
+
+import random
+
+participants = ['Jack','Jill','Larry','Tom']
+
+def Guess(participants):
+    my_participant_dict = {}
+    for participant in participants:
+        my_participant_dict[participant] = random.randint(1, 9)
+    if my_participant_dict['Larry'] == 9:
+        return True
+    else:
+        return False
+print(Guess(participants)) # True
+# The code seems to be working fine. However, there are some things that could go wrong, so find the part
+#  that might throw an exception and wrap it in a try-except block to ensure that you
+# get sensible behavior. Do this in the cell below. Code your function to return None if an exception occurs.
+
+# Revised Guess() function soln
+def Guess(participants):
+    my_participant_dict = {}
+    for participant in participants:
+        my_participant_dict[participant] = random.randint(1, 9)
+    try:
+        if my_participant_dict['Larry'] == 9:
+            return True
+        else:
+            return False
+    except:
+        return None
+
+
+
+
 
