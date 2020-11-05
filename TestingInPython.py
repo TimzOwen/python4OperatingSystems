@@ -97,3 +97,105 @@ class TestCompiler2(unittest.TestCase):
 unittest.main(argv = ['first-arg-is-ignored'], exit = False) # NOW THE code has more compilations
 
 
+
+
+
+# MORE TEST CONCEPTS IN PYTHON
+
+# Black and White Boxes
+# white box testing ("CLear Box testing/ Transparent testing")
+# Relies mainly on creator's knowledge of the s/w being tested to construct a test
+
+# Black boxes, the user has now idea of how the test is working
+# written with awareness of what the program is supposed to do-->its requirements/specification
+# but not how it does
+
+
+# Intergration Test
+# Verify interactions with different platforms like server and cLient side
+# Regression test----> used to check if the written program has been corrected from the error
+# smoke test/Build verification test---->test hardware
+# Load test---> check if system is behaving well under certain load work force
+
+
+
+
+# Test Driven Development (TDD)
+# create test before writing code
+# check continuos integration
+
+
+
+# Errors and Exception
+# Try Except Construct
+
+# Count the frequency of each character in a file
+def character_sequence(filename):
+    try:
+        f = open(filename)
+    except OSError:
+        return None
+    # Go through the files by processing each character
+    characters = {}
+    for line in f:
+        for char in line:
+            characters[char] = characters.get(char,0) + 1
+    f.close()
+    return characters
+
+
+# Raising Errors where need be
+# working with usernames and validation
+def validate_user(username, minlen):
+    if len(username)< minlen:
+        return False
+    if not username.isalnum():
+        return False
+    return True
+# this is not always the case bacause some could have upto one char name , so let's check the soln
+def validate_user(username, minlen):
+    if minlenM < 1:
+        raise ValueError("minimum Len must atleast  be 1 char")
+    if len(username)< minlen:
+        return False
+    if not username.isalnum():
+        return False
+    return True
+
+
+# add assertion to cath more errors to handle non-string inputs
+def validate_user(username, minlen):
+    assert type(username) == str, "username must be a string"
+    if minlenM < 1:
+        raise ValueError("minimum Len must atleast  be 1 char")
+    if len(username)< minlen:
+        return False
+    if not username.isalnum():
+        return False
+    return True
+
+
+
+
+# Testing for expected Errors
+# using unit test
+
+import unittest
+from validations import validate_user
+
+class TestValidateUser(unittest.TestCase):
+    def test_valid(self):
+        self.assertEqual(validate_user("valid_user",3), True)
+    def test_too_short(self):
+        self.assertEqual(validate_user("INV",5), False)
+    def test_invalid_characters(self):
+        self.assertEqual(validate_user("Invalid_user",1), False)
+    #now implement the assert Raise
+    def test_invalid_minlen(self):
+        self.assertRaises(ValueError, validate_user,"User", -1)
+#Run the test now
+unittest.main()
+
+
+
+
