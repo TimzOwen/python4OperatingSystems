@@ -210,3 +210,48 @@ writing scripts for python and automation using python programing
 [Functional inputs](https://docs.python.org/3/library/functions.html#input)
  
 [Inouts II](https://docs.python.org/3/library/functions.html#input)
+
+
+### Unit test and sample code
+
+[Understand a basic Example](https://docs.python.org/3/library/unittest.html#basic-example)
+
+[Running Test Using Commandline](https://docs.python.org/3/library/unittest.html#command-line-interface)
+
+[Understanding various unit Test Desing Patterns](https://docs.python.org/3/library/unittest.html#organizing-test-code)
+
+[Assert Raising in depth](https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertRaises)
+
+
+
+### Handling Errors Extensive Reading
+
+[Raise and the Exception](https://docs.python.org/3/tutorial/errors.html#raising-exceptions)
+
+[Conditions with Assert](https://docs.python.org/2/reference/simple_stmts.html#the-assert-statement)
+
+[Uses os Assert StackOverflow](https://stackoverflow.com/questions/5142418/what-is-the-use-of-assert-in-python)
+
+[Clause and Exception](https://docs.python.org/2/tutorial/errors.html#handling-exceptions)
+
+[Catching Exceptions](https://docs.python.org/3/library/exceptions.html#bltin-exceptions)
+
+[Other Exceptions Handling](https://doughellmann.com/blog/2009/06/19/python-exception-handling-techniques/)
+
+
+
+### More About Python test
+
+[Monitoring Distributed System](https://landing.google.com/sre/sre-book/chapters/monitoring-distributed-systems/)
+
+[Testing Reliability](https://landing.google.com/sre/sre-book/chapters/testing-reliability/)
+
+[Performance Testing](https://testing.googleblog.com/2007/10/performance-testing.html)
+
+[Smoke Testing](https://www.guru99.com/smoke-testing.html)
+
+[Exploratory Testing ](https://www.guru99.com/exploratory-testing.html)
+
+[Test First is Fun](https://testing.googleblog.com/2008/09/test-first-is-fun_08.html)
+
+
