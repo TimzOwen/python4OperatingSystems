@@ -276,3 +276,49 @@ writing scripts for python and automation using python programing
 [Test First is Fun](https://testing.googleblog.com/2008/09/test-first-is-fun_08.html)
 
 
+
+
+### Windows FAT 32 File system Readings
+
+[FAT32  File System](https://support.microsoft.com/en-us/help/154997/description-of-the-fat32-file-system)
+
+### Windows Formatting Disk
+
+[Disk Partitioning and Formating Windows](https://support.microsoft.com/en-us/help/140365/default-cluster-size-for-ntfs--fat--and-exfat)
+
+[CommandLine Option](https://technet.microsoft.com/en-us/library/cc766465(v=ws.10).aspx)
+
+### Mounting and Unmounting file systems in Linux
+
+[Mounting and Unmount](https://en.wikipedia.org/wiki/Fstab)
+
+### Windows Swap and Pages Management
+
+[windows paging](https://en.wikipedia.org/wiki/Paging#Windows_NT)
+
+[page File size](https://support.microsoft.com/en-us/help/2860880/how-to-determine-the-appropriate-page-file-size-for-64-bit-versions-of)
+
+### SWAP for Linux
+
+[swapping](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Installation_Guide/s2-diskpartrecommend-ppc.html#id4394007)
+
+### NTFS and File System
+
+[MasterFile Table](https://msdn.microsoft.com/en-us/library/windows/desktop/aa365230(v=vs.85).aspx)
+
+[Symbolic Link](https://msdn.microsoft.com/en-us/library/windows/desktop/aa363878(v=vs.85).aspx)
+
+[HardLinks and Junctions](https://msdn.microsoft.com/en-us/library/windows/desktop/aa365006(v=vs.85).aspx)
+
+### Windows Disk Usage
+
+[Disk Usage](https://docs.microsoft.com/en-us/sysinternals/downloads/du)
+
+[cleaning Disk in CLI](https://support.microsoft.com/en-us/help/181701/how-to-start-disk-cleanup-by-using-the-command-line)
+
+### Linux Disk Usage
+
+[Disk Usage](https://www.howtogeek.com/115229/htg-explains-why-linux-doesnt-need-defragmenting/)
+
+[Disk Repairs](https://en.wikipedia.org/wiki/Fsck)
+
