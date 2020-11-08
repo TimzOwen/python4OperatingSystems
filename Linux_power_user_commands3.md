@@ -1,1 +1,151 @@
 
+
+#### FileSystem Types
+
+#### Partition tables
+
+    Master  Boot Record(MBR)
+    
+    GUID Partition Table(GPT)
+    
+#### Partitioning and Formating
+
+CMD Diskpart
+
+    Diskpart
+    
+    list disk
+    
+    select disk1
+    
+    clean
+    
+    Create partition primary
+    
+    select partition 1
+    
+    active
+    
+formart
+
+    formart FS=NTFS label=myDrive quick
+
+
+### Linux Partitioning and Formatting Disk
+
+parted used beacuse support many platform
+
+list disk
+
+    sudo parted -l
+    
+select disk
+
+    sudo parted/dev/sdb
+    
+make label
+
+    mklabel gpt
+    
+partition
+
+    mkpart primary ext4 1MiB 5GiB
+    
+formart
+
+    sudo mkfs -t ext4 /dev/sdb1
+    
+Mounting sd cards
+
+    sudo mount /dev/sdb1/folder_created_to_be_mounted_to
+    
+unmount
+
+    sudo unmount /dev/myusb
+
+
+### Swap Space in Windows
+
+pagefiles.sys
+
+    store recent accessed files
+
+### Linux Swap
+
+select a drive
+
+    sudo parted /dev/sdb
+    
+partition
+
+    mkpart primary linux-swap 5GiB 100%
+    
+make swap
+
+    sudo mkswap /dev/sdb2
+    
+enable swap
+
+    sudo swapon /dev/sdb2
+
+### File Data and Metadata Windows
+
+creating shortcuts
+
+    symbolick links (use cmd) mklink file1.txt
+    
+    HardLink (uses /H) mklink /H file1.txt
+
+### Linux Files
+
+stores data in inodes
+
+create
+
+    ls -l important_file
+    
+    ln -s important_file important_file.softlink
+    
+    ln important_file important_file.hardlink
+
+#### Disk Usage Windows
+
+check:
+
+    computer management
+    
+    select partition then properties
+
+#### Linux Disk usage
+
+check usage
+
+    du -h
+    
+check space
+
+    df (disk free in full)
+
+### File System Repair Windows
+
+Data Coruptions
+
+    handles by NTFS log sys file
+    
+self-healing
+
+    changes made to a disk on small errors automatically
+
+repair C
+
+    fsutil repair query C:
+    
+specify drive to be checked
+
+    chkdsk /F D:
+
+### Linux File system Repairs
+
+check file system
+
+    sudo fsck /dev/sda
