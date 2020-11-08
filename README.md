@@ -322,3 +322,10 @@ writing scripts for python and automation using python programing
 
 [Disk Repairs](https://en.wikipedia.org/wiki/Fsck)
 
+### bash scripting 
+
+[Bash Scripting](https://ryanstutorials.net/bash-scripting-tutorial/)
+
+[Scripting for beginners](https://linuxconfig.org/bash-scripting-tutorial-for-beginners)
+
+[Shell Scripting](https://www.shellscript.sh/)
