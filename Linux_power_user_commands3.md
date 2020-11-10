@@ -265,3 +265,111 @@ check run time, users   load avarage
 check for open files and processes using them
 
     lsof
+    
+
+### REMOTE ACCESS
+
+#### Remote connection and SSH
+
+SSH - secure shell for securely accessing one computer from another
+
+    private and public key
+
+### Remote connection windows
+
+powershell
+
+    putty.exe -ssh owen@255.255.255
+    
+Remote Desktop
+
+    GUI
+
+### File Transfer linux
+
+Secure copy
+
+    copy files between computers in a nerwork on linux
+    
+    scp /home/desktop/owen.txt shem@255.255.256:
+
+### File Transfer Windows
+
+pUty secure client (pscp.exe)
+
+    pscp.exe C:\Users\Desktop\owen.txt shem@255.255.256:
+    
+shared Folders
+
+    Right click and ccheck on share with
+    
+powershell share to all
+
+    net share sharingFolder=C:\Users\Owen\Desktop\sharingFolder /grant:everyone,full
+
+### Virtualization
+
+virtual box
+
+    virtual box for windows
+
+
+### Logging in Computing
+
+Logging: (act of creatign Logging events)
+
+### Windows event viewer
+
+Event viewer
+
+    eventvwr.msc
+
+### Linux Logs
+
+stored in
+
+    /var/log
+    
+check log files list
+
+    ls /var/log
+    
+logrotate
+
+    rotate machine logging within a specified time
+    
+system logs
+
+    less var/log/syslog
+
+#### working with Logs
+
+check on errors alone
+
+    less /var/log/syslog | grep error
+    
+Tail and logging in realtime
+
+    tail -f /var/log/syslog
+
+### Deployment of Operating System
+
+colnezella
+
+    backup and restore single /backup more machines
+    
+symantec ghots
+
+    imaging tool
+    
+Disk to cloning
+
+    harddrive cloning
+    
+Copy files as image with dd in linux
+
+
+    make sure its unmounted
+    
+    sudo dd if=/dev/sdd of=~/Desktop/my_usb_image.img bs=100M
+
