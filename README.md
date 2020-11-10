@@ -365,3 +365,40 @@ writing scripts for python and automation using python programing
 [Monitoring in Windows OS](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-process?view=powershell-5.1#outputs)
 
 [Monitoring resources in Linux](https://en.wikipedia.org/wiki/Load_(computing))
+
+
+### Remote connection
+
+[The powershell way](https://blogs.msdn.microsoft.com/powershell/2015/06/03/looking-forward-microsoft-support-for-secure-shell-ssh/)
+
+[SSH clients](https://en.wikipedia.org/wiki/Comparison_of_SSH_clients)
+
+[Download Putty Software from official site](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+
+[Remote file transfer windows](https://technet.microsoft.com/en-us/library/hh750728(v=ws.11).aspx)
+
+### Virtual machines
+
+[Virtualization in Windows with VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+
+[Platform virtualization comparison](https://en.wikipedia.org/wiki/Comparison_of_platform_virtualization_software)
+
+### Logs
+
+[Linux supplementary reading on Logs](http://manpages.ubuntu.com/manpages/zesty/man8/logrotate.8.html)
+
+### OS Deployment Reading
+
+[Disk Cloning](https://en.wikipedia.org/wiki/Comparison_of_disk_cloning_software)
+
+[Interacting with files in linux "dd"](http://man7.org/linux/man-pages/man1/dd.1.html)
+
+### Mobile Resetting ang flashing
+
+[Factory reset Android](https://support.google.com/pixelphone/answer/4596836)
+
+[IOS factory reset](https://support.apple.com/HT201252)
+
+[Full OTA for Nexus and Pixel Devices](https://developers.google.com/android/ota)
+
+[Frozen Iphones solution](https://support.apple.com/HT201412)
