@@ -329,3 +329,11 @@ writing scripts for python and automation using python programing
 [Scripting for beginners](https://linuxconfig.org/bash-scripting-tutorial-for-beginners)
 
 [Shell Scripting](https://www.shellscript.sh/)
+
+### Process creation and Termination
+
+[Windows processes](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/taskkill)
+
+[Reading Process infor windows](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-process?view=powershell-5.1)
+
+[Process information Linux](http://man7.org/linux/man-pages/man1/ps.1.html)
