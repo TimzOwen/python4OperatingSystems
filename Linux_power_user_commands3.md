@@ -149,3 +149,119 @@ specify drive to be checked
 check file system
 
     sudo fsck /dev/sda
+
+
+### Processes
+
+windows
+
+    starts of with the smss.exe to set up the os
+    
+    then login process winlogon.exe
+    
+    client runtime server csrss.exe (Running windows GUI and Commandline)
+    
+    Taskkill PID -->kills a process with specified ID
+    
+        taskkills /pid 5856
+        
+    TaskManager
+    
+        taskmgr.exe
+        
+Linux
+
+    uses init to start up the kernel process ID = 1
+    
+    less  /etc/some_file | grep Hello
+
+## Managing Process
+
+Windows
+
+    Kills a process on Task manager or cmd
+    
+    check PID
+    
+        tasklist
+        
+    powershel
+    
+        Get-Process
+Linux
+
+    check running process
+    
+        ps -x
+        
+        ps -ef (get all process for all users)
+        
+        ps -ef | grep Chrome (check if a process is running)
+        
+        ls -l /proc
+        
+### Signals on Processes
+
+Windows
+
+    SIGINT  (rendered with CTR + C)
+    
+Linux
+
+    CTR + C
+
+### Process Explorer Windows
+
+Look  at running procceses
+
+    cTR + F (find processes in a system)
+
+### managing processes Linux
+
+check process status
+
+    ps -x
+    
+kills a proccess
+
+    kill 202012
+    
+Kill without giving time for cleap up
+
+    kill -KILL 202013
+    
+suspend a process
+
+    kill - TSTP 202013
+    
+continue a process
+
+    kill -CONT 202013
+
+### Resource Monitoring Windows
+
+Resource monitoring Tools
+
+    GUI
+    
+terminal powershell
+
+    Get-process
+    
+Get specific process
+
+    Get-Process | Sort CPU -descending | Select -first 3 -Property ID,ProcessName,CPU
+
+### Linux resource monitoring
+
+most consuming resource
+
+    top
+    
+check run time, users   load avarage
+
+    uptime
+    
+check for open files and processes using them
+
+    lsof
