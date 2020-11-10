@@ -337,3 +337,31 @@ writing scripts for python and automation using python programing
 [Reading Process infor windows](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-process?view=powershell-5.1)
 
 [Process information Linux](http://man7.org/linux/man-pages/man1/ps.1.html)
+
+
+### Windows Signals
+
+[Handling signals inn Windows](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/signal)
+
+[Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer)
+
+### Mobile app processes management
+
+[switching apps in IOS](https://support.apple.com/HT202070)
+
+[Force close in IOS](https://support.apple.com/HT201330)
+
+[Find, close and Use apps in ?android](https://support.google.com/pixelphone/answer/2781964)
+
+[Android application Life cycle](https://developer.android.com/guide/components/activities/process-lifecycle)
+
+[IOS battery performance](https://support.apple.com/HT208387)
+
+[fix battery drain](https://support.google.com/pixelphone/answer/6090599)
+
+
+### Resource Monitoring
+
+[Monitoring in Windows OS](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-process?view=powershell-5.1#outputs)
+
+[Monitoring resources in Linux](https://en.wikipedia.org/wiki/Load_(computing))
